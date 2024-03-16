@@ -24,7 +24,9 @@ In this lab, we set up the following Azure resources:
     ![Screenshot 2023-11-08 152254](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/HUbVMDetails.png)
     
   - **SPK-VM1**: Windows Server 2022 VM in the SPK-vnet1.
+    
     ![Screenshot 2023-11-08 152254](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/SPKVM1_Details.png)
+  
   - **On-Premises VM**: Windows Server 2019 VM located in an on-premises environment with IP 192.168.10.10.
 
 ### Networking Configuration
@@ -41,10 +43,12 @@ In this lab, we set up the following Azure resources:
  
 - **Gateway**:
   - Created a Virtual Network Gateway (VNG1) in HUB-vnet1 for connecting to the on-premises network. Assigned a public IP for this gateway.
+    
     ![Screenshot 2023-11-08 1522](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/VNG1Configuration.png)
 
 - **Local Network Gateway (LNG)**:
   - Configured LNG with the on-premises public IP and private IP for establishing a connection to VNG1.
+    
 ![Screenshot 2023-11-08 1522](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/LNGDetails.png)
 
 ### Networking Setup Steps
@@ -57,9 +61,11 @@ In this lab, we set up the following Azure resources:
 ### Network Peering
 - Established peering between HUB-vnet1 and SPK-vnet1.
 - Allowed SPK-vnet1 to use the gateway from HUB-vnet1.
+  
   ![Screenshot 2023-11-08 1522](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/PeeringDetailsSPKtoHUB.png)
 
 - Allowed HUB-vnet1 to give gateway access to the SPK-vnet1.
+  
 ![Screenshot 2023-11-08 1522](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/PeeringDetailsHUbtoSPk.png)
 
 
@@ -75,10 +81,12 @@ In this lab, we set up the following Azure resources:
   
 ### Firewall Setup
 - Created Azure Firewall in the AzureFirewallSubnet of HUB-vnet1.
+  
  ![Screenshot 2023-11-08 1522](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/FWConf.png)
   
 - Configured firewall rules:
   - Blocked internet access for SPK-vnet1.
+    
  ![Screenshot 2023-11-08 1522](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/FWruleforSPK.png)
     
   - Allowed internet access for HUB-VM1.
