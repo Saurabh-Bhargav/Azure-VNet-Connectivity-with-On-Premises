@@ -20,7 +20,11 @@ In this lab, we set up the following Azure resources:
 
 - **Virtual Machines**:
   - **HUB-VM1**: Windows Server 2022 VM in the HUB-vnet1.
+    
+    ![Screenshot 2023-11-08 152254](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/HUbVMDetails.png)
+    
   - **SPK-VM1**: Windows Server 2022 VM in the SPK-vnet1.
+    ![Screenshot 2023-11-08 152254](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/SPKVM1_Details.png)
   - **On-Premises VM**: Windows Server 2019 VM located in an on-premises environment with IP 192.168.10.10.
 
 ### Networking Configuration
@@ -29,6 +33,8 @@ In this lab, we set up the following Azure resources:
     - Subnet1: 10.100.0.0/24
     - GatewaySubnet: 10.100.1.0/24
     - AzureFirewallSubnet: 10.100.2.0/24
+   
+      ![Screenshot 2023-11-08 1522](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/HUBVnet1_SubnetDetails.png)
 
   - **SPK-vnet1**:
     - SPK-prvt: 10.200.0.0/24
