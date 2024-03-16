@@ -1,4 +1,4 @@
-# Azure VNet Connectivity with On-Premises: A Hub & Spoke Approach
+# Azure Secure Connectivity with On-Premises: A Hub & Spoke Approach
 
 ## Project Overview
 The "Azure VNet Connectivity with On-Premises: A Hub & Spoke Approach" project provides a comprehensive hands-on experience in Azure, focusing on creating and securing interconnected virtual networks. This lab aims to demonstrate how to establish secure communication channels between Azure virtual networks and on-premises environments using various Azure networking features.
