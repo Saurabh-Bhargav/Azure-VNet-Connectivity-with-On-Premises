@@ -5,6 +5,12 @@ The "Building Secure Interconnected Networks" project provides a comprehensive h
 
 ## Project Details
 
+### Network Diagram
+
+![Screenshot 2023-11-08 152254](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/NetworkDaigram.png)
+
+
+
 ### Lab Environment Setup
 In this lab, we set up the following Azure resources:
 
