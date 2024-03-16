@@ -134,13 +134,13 @@ In this lab, we set up the following Azure resources:
 ## Challenges Faced and Solutions
 During the lab, I encountered a few challenges that required troubleshooting:
 
-### OS Firewall Restrictions: 
+- OS Firewall Restrictions: 
 Ensuring the operating system firewalls on all VMs were configured to allow necessary inbound and outbound traffic on specific ports.
-### Route Table Propagation:
+- Route Table Propagation:
 Disabling route propagation in the SPK-vnet1 route table to prevent conflicting routes.
-### Routing to Firewall:
+- Routing to Firewall:
 Verifying that the GatewaySubnet route table was also configured to direct traffic to the Azure Firewall.
-### On-Premises Routing: 
+- On-Premises Routing: 
 Confirming that routing was properly configured on the on-premises network to reach the Azure resources.
 
 This lab provided valuable insights into securing communication between Azure VNets and an on-premises environment. By implementing a VNG, LNG, VPN connection, peering, and Azure Firewall, I established a secure and controlled network architecture. The experience highlighted the importance of proper route table configuration, firewall rule management, and addressing potential OS firewall restrictions.
