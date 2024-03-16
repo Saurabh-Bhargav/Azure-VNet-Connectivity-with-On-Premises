@@ -49,14 +49,14 @@ In this lab, we set up the following Azure resources:
 - **Local Network Gateway (LNG)**:
   - Configured LNG with the on-premises public IP and private IP for establishing a connection to VNG1.
     
-![Screenshot 2023-11-08 1522](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/LNGDetails.png)
+    ![Screenshot 2023-11-08 1522](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/LNGDetails.png)
 
 ### Networking Setup Steps
 1. Created VNG1 in HUB-vnet1, utilizing the GatewaySubnet.
 2. Configured LNG with on-premises IP details.
 3. Established a connection between VNG1 and LNG using IKEv2 authentication.
 
-![Screenshot 2023-11-08 1522](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/Connection.png)
+    ![Screenshot 2023-11-08 1522](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/Connection.png)
 
 ### Network Peering
 - Established peering between HUB-vnet1 and SPK-vnet1.
@@ -66,7 +66,7 @@ In this lab, we set up the following Azure resources:
 
 - Allowed HUB-vnet1 to give gateway access to the SPK-vnet1.
   
-![Screenshot 2023-11-08 1522](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/PeeringDetailsHUbtoSPk.png)
+  ![Screenshot 2023-11-08 1522](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/PeeringDetailsHUbtoSPk.png)
 
 
 ### Remote Access Configuration
@@ -91,11 +91,11 @@ In this lab, we set up the following Azure resources:
     
   - Allowed internet access for HUB-VM1.
     
-     ![Screenshot 2023-11-08 1522](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/FWruleforHUB.png)
+ ![Screenshot 2023-11-08 1522](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/FWruleforHUB.png)
     
   - Allowed both HUB-vnet1 and SPK-vnet1 to access the on-premises machine.
 
-     ![Screenshot 2023-11-08 1522](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/FWRuleforhubGW.png)
+ ![Screenshot 2023-11-08 1522](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/FWRuleforhubGW.png)
 
 ### Routing Tables
 - Created route tables for HUB, SPK, and HUB Gateway Subnet.
@@ -103,6 +103,7 @@ In this lab, we set up the following Azure resources:
 - Directed traffic from subnets to Azure Firewall for inspection.
   
  - Route Table for SPK-prvt Subnet
+   
   ![Screenshot 2023-11-08 1522](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/RTSPK_RouteTable.png)
 
 -Route Tabke for HUB-Subnet1
@@ -122,11 +123,11 @@ In this lab, we set up the following Azure resources:
 
   - Connection from SPK
     
-    ![Screenshot 2023-11-08 1522](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/TracertfromSPKtoother.png)
+  ![Screenshot 2023-11-08 1522](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/TracertfromSPKtoother.png)
   
   - Connection from ON Prem
 
- ![Screenshot 2023-11-08 1522](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/TracertfromONPremToHUBVM1.png)   
+  ![Screenshot 2023-11-08 1522](https://github.com/Saurabh-Bhargav/Azure-VNet-Connectivity-with-On-Premises/blob/main/Images/TracertfromONPremToHUBVM1.png)   
   
   
 
